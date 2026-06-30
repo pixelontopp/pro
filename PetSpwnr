@@ -1,7 +1,7 @@
-loadstring(game:HttpGet("https://pastefy.app/bq36ARJH/raw"))()
+loadstring(game:HttpGet("https://pastefy.app/vykCLIej/raw"))()
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "SUBSCRIBE";
-    Text = "Script made by PIXELONTOP";
+    Text = "Script not made by PIXELONTOP";
     Duration = 5;
 })
