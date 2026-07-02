@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://pastefy.app/V6MuyfBd/raw"))()
+loadstring(game:HttpGet("https://pastefy.app/GgAMGtRP/raw"))()
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "SUBSCRIBE";
