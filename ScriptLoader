@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://pastefy.app/bq36ARJH/raw"))()
+loadstring(game:HttpGet("https://pastefy.app/hDVNUhuD/raw"))()
 
 -- notify
 game:GetService("StarterGui"):SetCore("SendNotification", {
