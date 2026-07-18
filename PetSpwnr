@@ -1,5 +1,5 @@
-loadstring(game:HttpGet("https://pastefy.app/GgAMGtRP/raw"))()
-
+loadstring(game:HttpGet("https://cdn.sourceb.in/bins/hXymlcAH0x/0"))()
+-- this script os obfuscated do not deobfuscate it!!!!
 game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "SUBSCRIBE";
     Text = "Script not made by PIXELONTOP";
