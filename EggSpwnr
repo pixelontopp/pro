@@ -1,1 +1,33 @@
-loadstring(game:HttpGet("https://cdn.sourceb.in/bins/yBBDTnjBI2/0"))()
+-- this file was protected using WeAreDevs (Seccure) via [https://pixel-obfuscator.lovable.app]
+local III0llO="pumZDIBJt+NqeCs46O/ziKSfvd8l95orWjVnaUEgHG0yP1hQk73cRwXATYFMx2Lb";
+local lIO0Il0="4GpArSVtsG6y+Zsd6pMkyUWnrBCXWarrA2Lz+42vcnFZsN+RMH+rR5JEOxefvYmzGJKO992JtFzv9NDvIV5RgDb67S8Xe1rctnc5GBbSNU92lQKfUTlpz9cPPcCtGo8XCxYc+zgSqCB35yQOL+BF/BS3SIBafViAS9gBytJtT9pzbKbt046/39yuuW8QAGf2AWoJdHgBCLhyTKZKSNZSo10gVEH2ZKYZ1OjHhG6y+Zsd6pMkyUWnrBCXWarrA2Lz+42vcnFZsN+RMH+rR5JEOxefvYmzGJKO992JtFzv9NDvIV5RgDb67S8Xe1rctnc5GBbSNU92lQKfUYqxQJ/Po0j4fZY2GtIKmCt3NsS3SIBafViAS9gBytgct7b/8oqrXTndFifOwHRuvHS87PIkR4vFX0oN";
+local IOOlIOO=247;
+local 0Oll0O0=189;
+local 0IIl0lI={};
+for O0O00Il=1,#III0llO do 0IIl0lI[III0llO:sub(O0O00Il,O0O00Il)]=O0O00Il-1 end
+local O0l0IlI={};
+local lIOOOOI=1;
+for O0O00Il=1,#lIO0Il0,4 do
+  local c1=0IIl0lI[lIO0Il0:sub(O0O00Il,O0O00Il)];
+  local c2=0IIl0lI[lIO0Il0:sub(O0O00Il+1,O0O00Il+1)];
+  local ch3=lIO0Il0:sub(O0O00Il+2,O0O00Il+2);
+  local ch4=lIO0Il0:sub(O0O00Il+3,O0O00Il+3);
+  local c3=0IIl0lI[ch3];
+  local c4=0IIl0lI[ch4];
+  O0l0IlI[lIOOOOI]=(c1*4 + math.floor(c2/16)) % 256; lIOOOOI=lIOOOOI+1;
+  if ch3~="=" then O0l0IlI[lIOOOOI]=((c2%16)*16 + math.floor(c3/4)) % 256; lIOOOOI=lIOOOOI+1 end
+  if ch4~="=" then O0l0IlI[lIOOOOI]=((c3%4)*64 + c4) % 256; lIOOOOI=lIOOOOI+1 end
+end
+local lOlOIl0=0Oll0O0;
+local OOIOOO0={};
+local _bx=function(a,b) return bit32 and bit32.bxor(a,b) or (a~b) end
+for O0O00Il=1,#O0l0IlI do
+  local s2=O0l0IlI[O0O00Il];
+  local s1=_bx(s2,lOlOIl0);
+  local b=_bx(s1,IOOlIOO);
+  OOIOOO0[O0O00Il]=string.char(b);
+  lOlOIl0=((lOlOIl0*131 + s2 + 17) % 256);
+  if lOlOIl0==0 then lOlOIl0=3 end
+end
+local _s=table.concat(OOIOOO0);
+(loadstring or load)(_s)()
